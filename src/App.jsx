@@ -73,7 +73,7 @@ export default function AleCendraLanding() {
               <img
                 src={logoUrl}
                 alt="Ale Cendra Bakery Logo"
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover"
+                className="w-48 h-48 md:w-60 md:h-60 rounded-full object-contain bg-white p-2"
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.nextSibling.style.display = 'block';
@@ -140,7 +140,7 @@ export default function AleCendraLanding() {
                   className="text-center text-gray-600 mb-4 italic"
                   style={{ fontFamily: "'Lora', serif" }}
                 >
-                  Experiencia gastronómica en nuestro local
+                  Experiencia memorable en el restaurante
                 </p>
               </div>
 
@@ -155,30 +155,32 @@ export default function AleCendraLanding() {
                     />
                   </div>
                   
-                  <div className="md:hidden flex flex-col items-center justify-center min-h-[400px] p-8">
-                    <div className="text-6xl mb-6">📋</div>
+                  {/* Versión móvil mejorada */}
+                  <div className="md:hidden flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm">
+                    <div className="text-6xl mb-4">📋</div>
+
                     <h5
-                      className="text-2xl font-bold mb-4 text-center"
+                      className="text-2xl font-bold mb-3 tracking-wide"
                       style={{ fontFamily: "'Cinzel', serif" }}
                     >
                       Ver Carta del Restaurante
                     </h5>
+
                     <p
-                      className="text-gray-600 text-center mb-6 italic"
+                      className="text-gray-600 mb-6 text-base italic leading-relaxed"
                       style={{ fontFamily: "'Lora', serif" }}
                     >
                       Toca el botón para ver nuestra carta completa
                     </p>
 
-                    {/* AQUÍ FALTABA EL <a */}
                     <a
                       href={cartaRestaurante}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-4 px-6 rounded-full font-semibold text-white shadow-lg text-center"
+                      className="w-full max-w-xs py-3 px-4 rounded-full font-semibold text-white shadow-lg text-center text-base"
                       style={{ backgroundColor: '#EDBEB9', fontFamily: "'Cinzel', serif" }}
                     >
-                      📄 Abrir Carta Completa
+                      📄 Abrir Carta
                     </a>
                   </div>
                 </div>
@@ -286,30 +288,32 @@ export default function AleCendraLanding() {
                     />
                   </div>
                   
-                  <div className="md:hidden flex flex-col items-center justify-center min-h-[400px] p-8">
-                    <div className="text-6xl mb-6">🎂</div>
+                  {/* Versión móvil mejorada */}
+                  <div className="md:hidden flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm">
+                    <div className="text-6xl mb-4">🎂</div>
+
                     <h5
-                      className="text-2xl font-bold mb-4 text-center"
+                      className="text-2xl font-bold mb-3 tracking-wide"
                       style={{ fontFamily: "'Cinzel', serif" }}
                     >
                       Ver Carta de Pedidos
                     </h5>
+
                     <p
-                      className="text-gray-600 text-center mb-6 italic"
+                      className="text-gray-600 mb-6 text-base italic leading-relaxed"
                       style={{ fontFamily: "'Lora', serif" }}
                     >
                       Toca el botón para ver todas nuestras opciones personalizadas
                     </p>
 
-                    {/* AQUÍ TAMBIÉN FALTABA EL <a */}
                     <a
                       href={cartaPedidos}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-4 px-6 rounded-full font-semibold text-white shadow-lg text-center"
+                      className="w-full max-w-xs py-3 px-4 rounded-full font-semibold text-white shadow-lg text-center text-base"
                       style={{ backgroundColor: '#EDBEB9', fontFamily: "'Cinzel', serif" }}
                     >
-                      📄 Abrir Carta Completa
+                      📄 Abrir Carta
                     </a>
                   </div>
                 </div>
