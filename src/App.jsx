@@ -237,13 +237,13 @@ export default function AleCendraLanding() {
                           className="text-xs text-gray-600"
                           style={{ fontFamily: "'Lora', serif" }}
                         >
-                          Lunes a Domingo
+                          Lunes a Domingo y feriados
                         </p>
                         <p
                           className="text-xs text-gray-600"
                           style={{ fontFamily: "'Lora', serif" }}
                         >
-                          10:00 AM - 10:00 PM
+                          8:00 AM - 10:00 PM
                         </p>
                       </div>
                     </div>
@@ -273,7 +273,7 @@ export default function AleCendraLanding() {
                   className="text-center text-gray-600 mb-4 italic"
                   style={{ fontFamily: "'Lora', serif" }}
                 >
-                  Delivery o Pick Up en tienda - Pedidos especiales
+                  Pick Up en tienda - Pedidos especiales
                 </p>
               </div>
 
@@ -296,7 +296,7 @@ export default function AleCendraLanding() {
                       className="text-2xl font-bold mb-3 tracking-wide"
                       style={{ fontFamily: "'Cinzel', serif" }}
                     >
-                      Ver Carta de Pedidos
+                      Ver Carta de Tortas y Bocaditos
                     </h5>
 
                     <p
@@ -411,15 +411,15 @@ export default function AleCendraLanding() {
                     <Clock size={24} style={{ color: '#EDBEB9' }} className="mt-1" />
                     <div>
                       <p className="font-semibold" style={{ fontFamily: "'Cinzel', serif" }}>Horario</p>
-                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>Lunes a Domingo</p>
-                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>10:00 AM - 10:00 PM</p>
+                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>Lunes a Domingo y feriados</p>
+                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>8:00 AM - 10:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin size={24} style={{ color: '#EDBEB9' }} className="mt-1" />
                     <div>
                       <p className="font-semibold" style={{ fontFamily: "'Cinzel', serif" }}>Ubicación</p>
-                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>Lima, Perú</p>
+                      <p className="text-gray-600" style={{ fontFamily: "'Lora', serif" }}>Av. 28 de Julio, 200 Miraflores y Calle Punta Pejerrey 316, Surco</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -501,4 +501,5 @@ export default function AleCendraLanding() {
     </div>
   );
 }
+
 
