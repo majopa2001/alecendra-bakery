@@ -140,7 +140,7 @@ export default function AleCendraLanding() {
                   className="text-center text-gray-600 mb-4 italic"
                   style={{ fontFamily: "'Lora', serif" }}
                 >
-                  Experiencia memorable en el restaurante
+                  Tu nueva experiencia favorita empieza aquí
                 </p>
               </div>
 
@@ -501,3 +501,4 @@ export default function AleCendraLanding() {
     </div>
   );
 }
+
