@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageCircle, Calendar, ShoppingBag, Clock, MapPin } from 'lucide-react';
+import { Menu, X, MessageCircle, Calendar, ShoppingBag, Clock, MapPin, Instagram, Facebook } from 'lucide-react';
 
 export default function AleCendraLanding() {
   const [menuOpen, setMenuOpen] = useState(false);
   
   const cartaRestaurante = '/carta-restaurante.pdf';
-  const cartaPedidos = '/carta-pedidos.pdf';
+  const cartaPedidos = '/carta-pedidos.pdf'; // Asegúrate de tener este archivo en /public
   const logoUrl = '/logo.png';
   
   const whatsappNumber = '51936799135';
@@ -155,7 +155,6 @@ export default function AleCendraLanding() {
                     />
                   </div>
                   
-                  {/* Versión móvil mejorada */}
                   <div className="md:hidden flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm">
                     <div className="text-6xl mb-4">📋</div>
 
@@ -288,7 +287,6 @@ export default function AleCendraLanding() {
                     />
                   </div>
                   
-                  {/* Versión móvil mejorada */}
                   <div className="md:hidden flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm">
                     <div className="text-6xl mb-4">🎂</div>
 
@@ -430,6 +428,53 @@ export default function AleCendraLanding() {
                     </div>
                   </div>
                 </div>
+
+                {/* REDES SOCIALES */}
+                <div className="mt-8 pt-6 border-t-2" style={{ borderColor: '#EDBEB9' }}>
+                  <p className="font-semibold mb-4 text-center" style={{ fontFamily: "'Cinzel', serif" }}>
+                    Síguenos en Redes Sociales
+                  </p>
+                  <div className="flex justify-center gap-4">
+                    <a
+                      href="https://www.instagram.com/alecendra_pasteleria/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full hover:opacity-80 transform hover:scale-110 transition"
+                      style={{ backgroundColor: '#E4405F' }}
+                      aria-label="Instagram"
+                    >
+                      <Instagram size={24} color="white" />
+                    </a>
+                    <a
+                      href="https://www.tiktok.com/@alecendra.pasteleria?lang=es"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full hover:opacity-80 transform hover:scale-110 transition"
+                      style={{ backgroundColor: '#000000' }}
+                      aria-label="TikTok"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/alejandracendravaldizan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full hover:opacity-80 transform hover:scale-110 transition"
+                      style={{ backgroundColor: '#1877F2' }}
+                      aria-label="Facebook"
+                    >
+                      <Facebook size={24} color="white" />
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div>
@@ -501,5 +546,8 @@ export default function AleCendraLanding() {
     </div>
   );
 }
+
+            
+
 
 
